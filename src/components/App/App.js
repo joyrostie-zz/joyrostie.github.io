@@ -6,8 +6,8 @@ import '../../styles/index.css'
 
 class App extends React.Component {
     state = {
-        items: [],
-        currentItem: {text:'', key: 0, readonly: true}
+        currentItem: {text:'', key: 0, readonly: true},
+        items: []
     }
 
     componentDidMount() {
@@ -18,6 +18,8 @@ class App extends React.Component {
             })
         }
     }
+
+    //
 
     render() {
         return (
@@ -58,6 +60,7 @@ class App extends React.Component {
                 items: items,
                 currentItem : { text: '', key: 0, readonly: true }
             })
+            console.log(this.state.items);
         }
     }
 
