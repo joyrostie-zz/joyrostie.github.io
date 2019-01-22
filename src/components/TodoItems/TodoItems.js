@@ -8,7 +8,7 @@ class TodoItems extends React.Component {
 
         return (
             <div>
-                <ul className='theList' style={{width: '100%'}}> {listItems} </ul>
+                <ul className='theList'> {listItems} </ul>
             </div>
         )
     }
@@ -31,6 +31,8 @@ class TodoItems extends React.Component {
                         this.props.deleteItem(item.key)}> remove </button>
                 </div>
             </li>
+
+            //toggle Item in TodoItems
         )
     }
 }
