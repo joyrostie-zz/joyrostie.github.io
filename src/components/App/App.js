@@ -40,28 +40,6 @@ class App extends React.Component {
         )
     }
 
-    handleInput = e => {
-        const itemText = e.target.value
-        const currentItem = { text: itemText, key: Date.now(), readonly: true }
-        this.setState({
-            currentItem
-        })
-    }
-
-    addItem = e => {
-        e.preventDefault()
-        const newItem = this.state.currentItem
-        if (newItem.text !== '') {
-            const items = [...this.state.items, newItem]
-            window.localStorage.setItem('items', JSON.stringify(items))
-            this.setState({
-                items: items,
-                currentItem : { text: '', key: 0, readonly: true }
-            })
-            console.log(this.state.items);
-        }
-    }
-
     deleteItem = key => {
         const filteredItems = this.state.items.filter( item => item.key !== key )
         const filteredLocalItems = JSON.parse(window.localStorage.getItem('items'))

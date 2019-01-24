@@ -1,2 +1,3 @@
-export const ADD_TODO = 'ADD_TODO'
-export const REM_TODO = 'REM_TODO'
+export const HANDLE_ITEM = 'HANDLE ITEM'
+export const ADD_ITEM = 'ADD_ITEM'
+export const REM_ITEM = 'REM_ITEM'
