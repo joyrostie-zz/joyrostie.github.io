@@ -5,10 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../styles/index.css'
 
 class App extends React.Component {
-    state = {
-        currentItem: {text:'', key: 0, readonly: true},
-        items: []
-    }
 
     componentDidMount() {
         if (window.localStorage.length) {
@@ -24,35 +20,29 @@ class App extends React.Component {
             <div className='flexBox'>
                 <div className='jumbotron innerFlexBox'>
                     <TodoHeader
-                        // handleInput={this.handleInput}
-                        // addItem={this.addItem}
-                        // currentItem={this.state.currentItem}
                     />
                 </div>
                 <div className='innerFlexBox'>
                     <TodoItems
-                        items={this.state.items}
-                        toggleItem={this.toggleItem}
-                        deleteItem={this.deleteItem}
                     />
                 </div>
             </div>
         )
     }
 
-    deleteItem = key => {
-        const filteredItems = this.state.items.filter( item => item.key !== key )
-        const filteredLocalItems = JSON.parse(window.localStorage.getItem('items'))
-        for (let i = 0; i < filteredLocalItems.length; i++) {
-            if (filteredLocalItems[i].key === key) {
-                filteredLocalItems.splice(i, 1)
-            }
-        }
-        window.localStorage.setItem('items', JSON.stringify(filteredLocalItems))
-        this.setState({
-            items: filteredItems
-        })
-    }
+    // deleteItem = key => {
+    //     const filteredItems = this.state.items.filter( item => item.key !== key )
+    //     const filteredLocalItems = JSON.parse(window.localStorage.getItem('items'))
+    //     for (let i = 0; i < filteredLocalItems.length; i++) {
+    //         if (filteredLocalItems[i].key === key) {
+    //             filteredLocalItems.splice(i, 1)
+    //         }
+    //     }
+    //     window.localStorage.setItem('items', JSON.stringify(filteredLocalItems))
+    //     this.setState({
+    //         items: filteredItems
+    //     })
+    // }
 
     toggleItem = key => {
         const editedItem = this.state.items.find( item => item.key === key )

@@ -21,3 +21,27 @@ export const deleteItemAction = (key) => {
     }
 
 }
+
+export const toggleItemAction = (key) => {
+    return {
+        type: types.TOG_ITEM,
+        key
+    }
+
+}
+
+export const saveItemAction = (key) => {
+    return {
+        type: types.SAVE_ITEM,
+        key
+    }
+
+}
+
+export const editItemAction = (key) => {
+    return {
+        type: types.EDIT_ITEM,
+        key
+    }
+
+}

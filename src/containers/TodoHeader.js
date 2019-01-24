@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch) => {
 
 const TodoHeader = connect(mapStateToProps, mapDispatchToProps)(TodoInput)
 
-export default TodoHeader
+export default TodoHeader;
