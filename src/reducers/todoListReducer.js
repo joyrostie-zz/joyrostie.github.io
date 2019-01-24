@@ -15,7 +15,7 @@ export default function todolist(state = initialState, action) {
         case types.ADD_ITEM:
             return {
                 ...state,
-                items: state.items.concat(state.currentItem),
+                items: [...state.items, state.currentItem],
                 currentItem: initialState.currentItem
             }
         case types.REM_ITEM:

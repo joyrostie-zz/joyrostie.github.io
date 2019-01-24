@@ -1,10 +1,6 @@
 import React from "react"
 import { connect } from 'react-redux'
 
-@connect(state => ({
-    items: state.items
-}))
-
 class TodoItems extends React.Component {
 
     render() {
