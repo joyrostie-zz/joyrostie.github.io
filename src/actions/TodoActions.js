@@ -1,21 +1,20 @@
 import * as types from "../constants/ActionTypes";
 
-export function handleItemAction(item) {
+export const handleItemAction = (text) => {
     return {
         type: types.HANDLE_ITEM,
-        item
+        text
     }
 }
 
-export function addItemAction(item) {
+export const addItemAction = () => {
     return {
-        type: types.ADD_ITEM,
-        item
+        type: types.ADD_ITEM
     }
 
 }
 
-export function deleteItemAction(key) {
+export const deleteItemAction = (key) => {
     return {
         type: types.REM_ITEM,
         key

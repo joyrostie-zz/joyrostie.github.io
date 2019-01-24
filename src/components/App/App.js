@@ -1,6 +1,6 @@
 import React from 'react'
-import TodoHeader from '../TodoHeader/TodoHeader'
-import TodoItems from '../TodoItems/TodoItems'
+import TodoHeader from '../../containers/TodoHeader'
+import TodoItems from '../../containers/TodoItems'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../styles/index.css'
 
@@ -24,9 +24,9 @@ class App extends React.Component {
             <div className='flexBox'>
                 <div className='jumbotron innerFlexBox'>
                     <TodoHeader
-                        handleInput={this.handleInput}
-                        addItem={this.addItem}
-                        currentItem={this.state.currentItem}
+                        // handleInput={this.handleInput}
+                        // addItem={this.addItem}
+                        // currentItem={this.state.currentItem}
                     />
                 </div>
                 <div className='innerFlexBox'>
