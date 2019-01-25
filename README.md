@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#### See <a href='https://github.com/joyrostie/joyrostie.github.io/tree/react-todo-app'>react-todo-app<a> branch to checkout this App with Redux library
+
 ## Available Scripts
 
 In the project directory, you can run:
