@@ -29,19 +29,3 @@ export const toggleItemAction = (key) => {
     }
 
 }
-
-export const saveItemAction = (key) => {
-    return {
-        type: types.SAVE_ITEM,
-        key
-    }
-
-}
-
-export const editItemAction = (key) => {
-    return {
-        type: types.EDIT_ITEM,
-        key
-    }
-
-}

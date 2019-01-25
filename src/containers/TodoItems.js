@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import TodoItem from '../components/TodoItem/TodoItem'
-import { deleteItemAction, toggleItemAction, saveItemAction, editItemAction } from '../actions/TodoActions'
+import { toggleItemAction, deleteItemAction } from '../actions/TodoActions'
 
 const mapStateToProps = (state) => {
     return {
@@ -10,11 +10,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        deleteItem: (key) => {
-            dispatch(deleteItemAction(key))
-        },
         toggleItem: (key) => {
             dispatch(toggleItemAction(key))
+        },
+        deleteItem: (key) => {
+            dispatch(deleteItemAction(key))
         }
     }
 }
