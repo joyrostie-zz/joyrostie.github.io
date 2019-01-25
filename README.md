@@ -1,4 +1,4 @@
-#### See <a href='https://github.com/joyrostie/joyrostie.github.io/tree/react-todo-app'>react-todo-app<a> branch to checkout this App with Redux library
+#### See [react-todo-app](https://github.com/joyrostie/joyrostie.github.io/tree/react-todo-app) branch to checkout this App with Redux library
 
 ## Available Scripts
 
