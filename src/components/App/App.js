@@ -29,45 +29,6 @@ class App extends React.Component {
             </div>
         )
     }
-
-    // deleteItem = key => {
-    //     const filteredItems = this.state.items.filter( item => item.key !== key )
-    //     const filteredLocalItems = JSON.parse(window.localStorage.getItem('items'))
-    //     for (let i = 0; i < filteredLocalItems.length; i++) {
-    //         if (filteredLocalItems[i].key === key) {
-    //             filteredLocalItems.splice(i, 1)
-    //         }
-    //     }
-    //     window.localStorage.setItem('items', JSON.stringify(filteredLocalItems))
-    //     this.setState({
-    //         items: filteredItems
-    //     })
-    // }
-
-    toggleItem = key => {
-        const editedItem = this.state.items.find( item => item.key === key )
-        if (editedItem.readonly) {
-            this.editItem(key)
-        } else {
-            this.saveItem(key)
-        }
-    }
-
-    editItem = key => {
-        const editedItem = this.state.items.find( item => item.key === key )
-        editedItem.readonly = false
-        this.setState({
-            items: this.state.items
-        })
-    }
-
-    saveItem = key => {
-        const editedItem = this.state.items.find( item => item.key === key )
-        editedItem.readonly = true
-        this.setState({
-            items: this.state.items
-        })
-    }
 }
 
 export default App;

@@ -1,5 +1,4 @@
 import React from "react"
-// class TodoItem extends React.Component {
 
 const TodoItem = ({ items, toggleItem, deleteItem}) => {
 
@@ -32,7 +31,6 @@ const TodoItem = ({ items, toggleItem, deleteItem}) => {
             <ul className='theList'> {listItems} </ul>
         </div>
     )
-
 }
 
 export default TodoItem;
