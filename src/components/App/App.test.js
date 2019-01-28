@@ -6,7 +6,7 @@ import App from './App'
 
 configure({ adapter: new Adapter() })
 
-describe('App component deep test', () => {
+xdescribe('App component deep test', () => {
   let app
   let wrapper
 
