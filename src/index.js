@@ -10,6 +10,10 @@ const initialState = {
     items: []
 }
 
+/**
+ * @param  {function} rootReducer - Redux reducer function
+ * @param  {oject} initialState - the initial state of Redux store
+ */
 const store = createStore(rootReducer, initialState,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     )

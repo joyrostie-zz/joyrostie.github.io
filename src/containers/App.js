@@ -4,6 +4,12 @@ import TodoItems from './TodoItems'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/index.css'
 
+/**
+ * Renders App containder
+ *
+ * @constructor
+ * @return TodoHeader and TodoItems containders
+ */
 class App extends React.Component {
 
     render() {
