@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import rootReducer from './reducers/todoListReducer'
-import App from './components/App/App'
+import App from './containers/App'
 
 const initialState = {
     currentItem: { text: '', key: 0, readonly: true },
