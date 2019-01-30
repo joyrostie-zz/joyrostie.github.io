@@ -8,7 +8,7 @@ import '../styles/index.css'
  * Renders App containder
  *
  * @constructor
- * @return TodoHeader and TodoItems containders
+ * @return TodoHeader and TodoItems cointainers
  */
 class App extends React.Component {
 
