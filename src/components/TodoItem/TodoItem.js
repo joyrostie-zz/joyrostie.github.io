@@ -1,5 +1,14 @@
 import React from "react"
-
+/**
+ * Creates child TodoItem component
+ *
+ * @param  {object} items - property of Redux store
+ * @callback  {function} toggleItem - sends action to reducer to switch item.readly property
+ * @callback  {function} deleteItem -sends action to reducer to remove item from state items
+ * @event {onClick} - calls toggleItem
+ * @event {onClick} - calls deleteItem
+ * @returns React component
+ */
 const TodoItem = ({ items, toggleItem, deleteItem}) => {
 
     const createTodos = item => {

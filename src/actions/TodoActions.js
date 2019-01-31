@@ -1,5 +1,9 @@
 import * as types from '../constants/ActionTypes'
 
+/**
+ * @param  {String} text - text from input event e.target.value
+ * @returns object with instruction and argument to Redux reducer
+ */
 export const handleItemAction = (text) => {
     return {
         type: types.HANDLE_ITEM,
@@ -7,6 +11,9 @@ export const handleItemAction = (text) => {
     }
 }
 
+/**
+ * @returns object with instruction to Redux reducer
+ */
 export const addItemAction = () => {
     return {
         type: types.ADD_ITEM
@@ -14,6 +21,10 @@ export const addItemAction = () => {
 
 }
 
+/**
+ * @param  {Number} key - item key on what deleteItemAction was called
+ * @returns object with instruction and argument to Redux reducer
+ */
 export const deleteItemAction = (key) => {
     return {
         type: types.REM_ITEM,
@@ -22,6 +33,10 @@ export const deleteItemAction = (key) => {
 
 }
 
+/**
+ * @param  {Number} key - item key on what toggleItemAction was called
+ * @returns object with instruction and argument to Redux reducer
+ */
 export const toggleItemAction = (key) => {
     return {
         type: types.TOG_ITEM,

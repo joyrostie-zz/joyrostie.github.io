@@ -4,10 +4,10 @@ import { handleItemAction, addItemAction } from '../actions/TodoActions'
 
 
 /**
- * Maps Redux store to component
+ * Maps Redux store properties to component
  *
  * @param  {object} state - Redux store
- * @returns state propperty currentItem
+ * @returns state property currentItem object
  */
 const mapStateToProps = (state) => {
     return {
@@ -18,7 +18,7 @@ const mapStateToProps = (state) => {
 /**
  * Maps Redux store methods to component
  *
- * @param  {function} dispatch - Redux reducers fucntions
+ * @param  {function} dispatch - Redux reducers functions
  * @returns handleInput and addItem reducers
  */
 const mapDispatchToProps = (dispatch) => {
@@ -32,6 +32,13 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
+/**
+ * Generates TodoHeader component and passes state props and methods to child component
+ *
+ * @param  {object} mapStateToProps
+ * @param  {object} mapDispatchToProps
+ * @param  {function} TodoInput functional component
+ */
 const TodoHeader = connect(mapStateToProps, mapDispatchToProps)(TodoInput)
 
 export default TodoHeader;

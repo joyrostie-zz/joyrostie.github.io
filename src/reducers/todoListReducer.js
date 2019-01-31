@@ -1,5 +1,11 @@
 import * as types from '../constants/ActionTypes'
-
+/**
+ * Redux reducer function that returns new state object depending on dispatched action
+ *
+ * @param  {object} state={} - initial empty state as it is set under createStore in App component
+ * @param  {object} action - dispatched actions from child components describing desired state changes
+ * @returns new Redux store state object
+ */
 const todoListReducer = (state = {}, action) => {
     switch (action.type) {
         case types.HANDLE_ITEM:
